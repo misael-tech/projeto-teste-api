@@ -10,3 +10,5 @@ def mostrar_tarefas(request):
     dados = TarefaSerializer(listar_tarefas,many=True)
     
     return Response(dados.data,status=200)
+
+@api_view(["GET""POST"])
